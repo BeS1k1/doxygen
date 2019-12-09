@@ -1,0 +1,81 @@
+\hypertarget{class_find_path}{}\doxysection{Find\+Path Class Reference}
+\label{class_find_path}\index{FindPath@{FindPath}}
+
+
+Главный класс,.  
+
+
+\doxysubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static void \mbox{\hyperlink{class_find_path_a4979250fa917d51247b4fd0cb7229f9f}{main}} (String\mbox{[}$\,$\mbox{]} args)  throws I\+O\+Exception 
+\begin{DoxyCompactList}\small\item\em Начальная функция,. \end{DoxyCompactList}\item 
+static Array\+List$<$ Pair$<$ Integer, Integer $>$ $>$ \mbox{\hyperlink{class_find_path_a6d58dc014713e8063f54630e69baf02f}{find\+Path}} (int\mbox{[}$\,$\mbox{]} start, int\mbox{[}$\,$\mbox{]} finish, int\mbox{[}$\,$\mbox{]}\mbox{[}$\,$\mbox{]} maze, int N, int M)
+\begin{DoxyCompactList}\small\item\em Функция, которая возвращает путь в графе между двумя вершинами, если не существует, то выводит \char`\"{}path not found\char`\"{}. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Главный класс,. 
+
+который находит путь в графе, заданном матрицей смежности, из одной вершины в другую. ~\newline
+ \begin{DoxyAuthor}{Author}
+Николай 
+\end{DoxyAuthor}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_find_path_a6d58dc014713e8063f54630e69baf02f}\label{class_find_path_a6d58dc014713e8063f54630e69baf02f}} 
+\index{FindPath@{FindPath}!findPath@{findPath}}
+\index{findPath@{findPath}!FindPath@{FindPath}}
+\doxysubsubsection{\texorpdfstring{findPath()}{findPath()}}
+{\footnotesize\ttfamily static Array\+List$<$Pair$<$Integer, Integer$>$ $>$ Find\+Path.\+find\+Path (\begin{DoxyParamCaption}\item[{int\mbox{[}$\,$\mbox{]}}]{start,  }\item[{int\mbox{[}$\,$\mbox{]}}]{finish,  }\item[{int}]{maze\mbox{[}$\,$\mbox{]}\mbox{[}$\,$\mbox{]},  }\item[{int}]{N,  }\item[{int}]{M }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+
+
+Функция, которая возвращает путь в графе между двумя вершинами, если не существует, то выводит \char`\"{}path not found\char`\"{}. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em start} & координаты первой вершины \\
+\hline
+{\em finish} & координаты второй вершины \\
+\hline
+{\em maze} & сам граф, заданный двумерной матрицей \\
+\hline
+{\em N} & количество строк \\
+\hline
+{\em M} & количество столбцов \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+возвращает путь, если он существует 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_find_path_a4979250fa917d51247b4fd0cb7229f9f}\label{class_find_path_a4979250fa917d51247b4fd0cb7229f9f}} 
+\index{FindPath@{FindPath}!main@{main}}
+\index{main@{main}!FindPath@{FindPath}}
+\doxysubsubsection{\texorpdfstring{main()}{main()}}
+{\footnotesize\ttfamily static void Find\+Path.\+main (\begin{DoxyParamCaption}\item[{String\mbox{[}$\,$\mbox{]}}]{args }\end{DoxyParamCaption}) throws I\+O\+Exception\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+
+
+Начальная функция,. 
+
+в которой реализованно чтение из входящего файла 
+\begin{DoxyParams}{Parameters}
+{\em args} & \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em I\+O\+Exception} & \\
+\hline
+\end{DoxyExceptions}
+в блоке try происходит чтение из текстового файла output.\+txt Пример файла\+: 12 15 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 0 0 0 0 0 0 0 0 1 0 0 0 0 1 1 0 0 0 0 0 0 0 1 0 0 0 0 0 1 1 0 0 0 0 0 0 1 0 1 0 1 0 1 1 1 0 0 0 0 0 1 0 1 0 1 0 1 0 1 1 0 0 0 0 1 0 0 0 0 0 0 0 0 1 1 0 0 0 1 0 0 1 0 0 0 0 0 0 1 1 0 0 1 0 1 1 1 1 1 1 1 1 1 1 1 0 0 0 0 0 0 0 0 0 0 0 0 0 1 1 1 0 0 1 1 0 0 0 0 0 0 0 0 1 1 0 0 0 1 0 0 0 0 0 0 0 0 0 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 9 3 6 13
+
+Где в первой строке -\/ количество строк, во второй -\/ столбцов, далее сам граф, затем координаты вершин, между которыми нужно провести путь
+
+получаем ответ в функции findpath
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+src/Find\+Path.\+java\end{DoxyCompactItemize}
